@@ -2,7 +2,7 @@ class Paddle:
     def __init__(self):
         self.width = 100
         self.height = 10
-        self.speed = 0.25
+        self.speed = 4
         self.position = [300, 700]
 
     def move(self, direction):
@@ -13,3 +13,10 @@ class Paddle:
 
     def red_tresspassed(self):
         self.width /= 2
+
+    def reset(self):
+        self.width = 100
+        self.height = 10
+        self.speed = 4
+        self.position = [300, 700]
+
